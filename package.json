@@ -1,0 +1,25 @@
+{
+  "name": "flatten-vessel-data",
+  "version": "1.0.1",
+  "description": "Signal K Node.js server plugin that make all rest data available as a flat list of keys",
+  "main": "index.js",
+  "signalk-plugin-enabled-by-default": true,
+  "keywords": [
+    "signalk-node-server-plugin"
+  ],
+  "author": "Fabian Tollenaar <fabian@decipher.industries> (https://decipher.industries)",
+  "scripts": {
+    "build": "rm -rf ./dist ; tsc",
+    "prepublishOnly": "rm -rf ./dist ; tsc",
+    "push": "npm publish"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/debug": "^4.1.2",
+    "@types/node": "^11.12.0",
+    "typescript": "^3.3.4000"
+  },
+  "dependencies": {
+    "debug": "^4.1.1"
+  }
+}
